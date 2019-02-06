@@ -13,12 +13,12 @@ public class DicePanel extends JPanel {
         this.dice = dice;
 
         rollButton = new JButton("Roll");
-        rollButton1 = new JButton("Test");
+        rollButton1 = new JButton("Keep 1 die");
         displayLabel = new JLabel();
 
         rollButton.addActionListener(e -> {
                 displayLabel.setText("You rolled a: " + dice.roll());
-                System.out.println("Hello World!");}
+                System.out.println("Roll Button Pushed");}
         );
         // or if you're not using Java 8, you can do the more verbose thing.
 
